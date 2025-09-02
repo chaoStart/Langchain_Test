@@ -1,0 +1,34 @@
+server:
+  port:8081
+
+elasticsearch:
+  host: localhost
+#  host: 10.3.24.46
+  port: 9200
+  scheme: http  # 可选：默认 http，也支持 https
+  index: suzhou_storage_dataset_big_chunk1
+#  index: ragflow_sciyonff8bcdc11efbdcf88aedd5104cw
+#  index: ragflow_sciyonff8bcdc11efbdcf88aedd5168cw
+  username: elastic
+  password: sciyon
+
+llm:
+  api-key: sk-47c855b5e7114a02854ee2a63e472b1e
+  base-url: https://dashscope.aliyuncs.com/compatible-mode/v1/
+  model-name: qwen-max
+
+indicator:
+  INDEX_NAME: datang_docs_index1
+  SHEET_NAME: 2025年日指标查询sql-新
+  EXCEL_PATH: D:/常用资料/测试文档/大唐江苏/dev-datang2/src/main/java/com/example/util/2025年日指标大唐江苏公司.xlsx
+
+openai:
+  api:
+    url: http://10.3.24.46:9997/v1/embeddings
+    key: 123
+
+external:
+  indicator_url: http://10.44.2.104:9090/mainApi/syncplant-business-dataset/api/empoworx/dataset/storeconfig/exec
+  indicator_es_index: datang_docs_index3
+
+dataset_URL: "http://10.44.2.104:9090/mainApi/syncplant-business-dataset-jink/api/empoworx/dataset/storeconfig/process"
